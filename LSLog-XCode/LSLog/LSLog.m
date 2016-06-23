@@ -155,7 +155,7 @@ static BOOL _hasXcodeColorsInstalled = NO;
         return;
     }
     
-    NSView *consoleParentView = [self getParantViewByClassName:@"DVTControllerContentView" ofView:consoleTextView];
+    NSView *consoleParentView = [self getParantViewByClassName:@"DVTControllerContentView_ControlledBy_IDEConsoleArea" ofView:consoleTextView];
     NSView *scopeBarView = [self getViewByClassName:@"DVTScopeBarView" inContainerView:consoleParentView];
     if (!scopeBarView) {
         NSLog(@"[LSLog:addFilterViews] DVTScopeBarView not found");
